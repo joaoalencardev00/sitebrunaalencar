@@ -54,6 +54,8 @@ section{padding:clamp(56px,8vw,104px) 0}
 .btn.ghost:hover{box-shadow:none;background:var(--line)}
 .btn.light{background:#fff;color:#702F3D;border-color:#fff}
 .btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+/* CTAs do topo com dimensões iguais */
+.hero .btns .btn{width:420px;max-width:100%;height:64px;min-height:64px;padding:10px 18px;line-height:1.3;text-align:center}
 
 /* ===== 4. HEADER ===== */
 header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s;padding-top:env(safe-area-inset-top,0px);margin-top:calc(-1 * env(safe-area-inset-top,0px))}
@@ -427,18 +429,7 @@ footer p{margin:0 0 6px;max-width:52ch}
     </div>
     <div class="loc-media reveal">
       <div class="ph" data-img="img/entrada.jpg" role="img" aria-label="Dra. Bruna Alencar na entrada do Instituto Sauté"><span>Foto</span></div>
-      <div class="map" id="mapa">
-        <svg viewBox="0 0 400 230" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Mapa ilustrativo da localização do Instituto Sauté">
-          <rect width="400" height="230" fill="#efe6e1"/>
-          <g fill="#f8f3f0"><rect x="10" y="10" width="110" height="80" rx="6"/><rect x="140" y="10" width="90" height="80" rx="6"/><rect x="250" y="10" width="140" height="80" rx="6"/><rect x="10" y="130" width="110" height="90" rx="6"/><rect x="140" y="130" width="90" height="90" rx="6"/><rect x="250" y="130" width="140" height="90" rx="6"/></g>
-          <g stroke="#fff" stroke-width="13" stroke-linecap="round" fill="none"><path d="M0 110H400"/><path d="M130 0V230"/><path d="M240 0V230"/></g>
-          <path d="M0 110H400" stroke="#d9c6a0" stroke-width="2.5" stroke-dasharray="9 8" fill="none"/>
-          <text x="16" y="106" font-size="9" fill="#645D64" font-family="Manrope,sans-serif" letter-spacing=".4">Av. Luís Viana Filho</text>
-          <ellipse class="pin-pulse" cx="240" cy="110" rx="16" ry="6" fill="#702F3D" opacity=".22"/>
-          <g transform="translate(240 110)"><path d="M0 0c-9-11-14-17-14-24a14 14 0 0 1 28 0c0 7-5 13-14 24z" fill="#702F3D"/><circle cy="-24" r="5.5" fill="#fff"/></g>
-          <rect x="258" y="62" width="92" height="20" rx="10" fill="#fff"/><text x="304" y="75.5" text-anchor="middle" font-size="10" font-weight="700" fill="#702F3D" font-family="Manrope,sans-serif">Instituto Sauté</text>
-        </svg>
-        <span class="map-note">Mapa ilustrativo</span>
+      <div class="map" id="mapa" aria-label="Mapa interativo da localização do Instituto Sauté">
         <a class="map-link" href="#" data-mapa target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg>Abrir rota no Google Maps</a>
       </div>
     </div>
@@ -509,7 +500,11 @@ if (CONFIG.mapaEmbed) {
   const box = document.getElementById("mapa"), f = document.createElement("iframe");
   f.src = "https://www.google.com/maps?q=" + encodeURIComponent(CONFIG.enderecoMapa) + "&output=embed";
   f.title = "Mapa: localização do Instituto Sauté"; f.loading = "lazy"; f.referrerPolicy = "no-referrer-when-downgrade";
-  box.querySelector(".map-note").remove(); box.prepend(f);
+  const fakeMap = box.querySelector("svg");
+  const mapNote = box.querySelector(".map-note");
+  if (fakeMap) fakeMap.remove();
+  if (mapNote) mapNote.remove();
+  box.prepend(f);
 }
 document.getElementById("ano").textContent = new Date().getFullYear();
 if (CONFIG.promo.ativa) {

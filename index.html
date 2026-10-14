@@ -209,13 +209,51 @@ footer p{margin:0 0 6px;max-width:52ch}
   .burger{display:grid;place-items:center}
 }
 @media (max-width:760px){
-  body{font-size:16px}
-  .hero .wrap,.two{grid-template-columns:1fr}
-  .hero .ph{max-width:380px;margin-inline:auto}.frame{max-width:380px;margin-inline:auto;width:100%}
-  .two .ph{max-width:360px}
-  .g3,.g2,.g4{grid-template-columns:1fr}
-  .btn{width:100%}
-  .wa-fixed span{display:none}.wa-fixed{padding:0;width:58px;justify-content:center}
+  html{scroll-padding-top:calc(68px + env(safe-area-inset-top,0px))}
+  body{font-size:16px;line-height:1.6}
+  .wrap{width:min(100% - 32px,560px)}
+  section{padding:52px 0}
+  .bar{min-height:64px}
+  .logo{font-size:1.12rem}
+  .nav{max-height:calc(100dvh - 76px);overflow-y:auto}
+  .hero{padding-top:32px}
+  .hero .wrap,.two{grid-template-columns:1fr;gap:32px}
+  .hero h1{font-size:clamp(2rem,9vw,2.8rem)}
+  .hero .ph{max-width:340px;margin-inline:auto}
+  .frame{max-width:340px;margin:0 auto 10px;width:100%}
+  .two .ph{max-width:340px;margin-inline:auto}
+  .head{margin-bottom:30px}
+  .lead{font-size:1rem}
+  .chips{gap:10px 16px;margin-top:22px}
+  .g3,.g2,.g4{grid-template-columns:1fr;gap:18px}
+  .card .body{padding:20px}
+  .feat,.svc{padding:20px}
+  .btns{gap:10px;margin-top:22px}
+  .btn,.hero .btns .btn{width:100%;min-height:54px;height:auto;padding:12px 18px;white-space:normal}
+  .steps li{padding:22px 18px}
+  summary{padding:17px 16px;gap:12px}
+  details p{padding:0 16px 17px}
+  .loc-info{gap:12px}
+  .loc-card{padding:18px;gap:12px}
+  .loc-card.addr{grid-template-columns:24px minmax(0,1fr);gap:12px}
+  .loc-card .sign{grid-column:1/-1;aspect-ratio:16/9}
+  .loc-media{gap:14px}
+  .loc-media .ph{max-width:340px}
+  .map{height:260px}
+  .cta .wrap{gap:28px}
+  .cta .ph{max-width:260px}
+  .quote{padding:22px;font-size:1.05rem}
+  footer{padding:36px 0 calc(100px + env(safe-area-inset-bottom,0px))}
+  footer .wrap{gap:20px}
+  .wa-fixed{right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));width:56px;height:56px;min-height:56px}
+}
+@media (max-width:380px){
+  .wrap{width:calc(100% - 28px)}
+  .logo{font-size:1.02rem}
+  .logo small{font-size:.56rem}
+  .hero h1{font-size:2rem}
+  .eyebrow{font-size:.69rem;letter-spacing:.1em}
+  .info li,.loc-card{font-size:.92rem}
 }
 </style>
 </head>

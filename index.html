@@ -209,6 +209,8 @@ footer p{margin:0 0 6px;max-width:52ch}
   .burger{display:grid;place-items:center}
 }
 @media (max-width:760px){
+  /* No mobile, preserve a paleta clara com marsala mesmo quando o aparelho usa tema escuro. */
+  :root:not([data-theme="light"]),:root[data-theme="dark"]{color-scheme:light;--bg:#F8F3F0;--surface:#FFFFFF;--ink:#343034;--mut:#645D64;--brand:#702F3D;--head:#702F3D;--line:rgba(112,47,61,.14);--shadow:0 8px 28px rgba(52,48,52,.07)}
   html{scroll-padding-top:calc(68px + env(safe-area-inset-top,0px))}
   body{font-size:16px;line-height:1.6}
   .wrap{width:min(100% - 32px,560px)}
@@ -245,7 +247,9 @@ footer p{margin:0 0 6px;max-width:52ch}
   .quote{padding:22px;font-size:1.05rem}
   footer{padding:36px 0 calc(100px + env(safe-area-inset-bottom,0px))}
   footer .wrap{gap:20px}
-  .wa-fixed{right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));width:56px;height:56px;min-height:56px}
+  .wa-fixed span{display:inline}
+  .wa-fixed{right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));width:auto;min-width:56px;height:52px;min-height:52px;padding:0 18px;gap:9px;justify-content:center;white-space:nowrap;font-size:.92rem}
+  .wa-fixed::before{pointer-events:none}
 }
 @media (max-width:380px){
   .wrap{width:calc(100% - 28px)}

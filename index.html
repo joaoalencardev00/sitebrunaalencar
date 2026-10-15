@@ -82,6 +82,15 @@ header.scrolled{border-color:var(--line);box-shadow:var(--shadow)}
 .ph span{font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;opacity:.55;padding:12px;text-align:center}
 .ph>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .hero-photo{object-position:center 28%}
+.treatment-grid .card .ph{background:#fff;aspect-ratio:4/3}
+.treatment-grid .ph>img{object-fit:contain;background:#fff}
+.treatment-grid .treatment-comparison>img{object-fit:cover}
+.treatment-grid .treatment-comparison-portrait>img{object-fit:contain;background:#fff}
+.treatment-grid .card .body{text-align:center;align-items:center}
+.treatment-grid .card .body h3{width:100%}
+.treatment-grid .card .body p{width:100%}
+.treatment-grid .card .more{margin-inline:auto;justify-content:center}
+
 .hero-frame{width:min(420px,100%);margin-inline:auto}
 .hero-frame .ph{border-radius:200px 200px var(--r) var(--r)}
 .ph.has-img span{display:none}
@@ -345,10 +354,10 @@ footer p{margin:0 0 6px;max-width:52ch}
       <h2>Qual tratamento você quer conhecer?</h2>
       <p class="lead">Cada tratamento tem indicações próprias. Conheça as possibilidades e converse com a equipe para entender qual faz sentido no seu caso.</p>
     </div>
-    <div class="grid g3">
-      <article class="card reveal"><div class="ph r45" data-img="img/card-alinhadores.jpg" role="img" aria-label="Alinhadores invisíveis"><span>Foto</span></div><div class="body"><h3>Alinhadores invisíveis</h3><p>Alinhamento discreto, com planejamento digital a cada etapa.</p><a class="more" href="#" data-wa data-tema="alinhadores invisíveis" data-posicao="tratamento-alinhadores">Agendar minha avaliação pelo WhatsApp <svg class="ico"><use href="#i-arrow"/></svg></a></div></article>
-      <article class="card reveal"><div class="ph r45" data-img="img/card-facetas.jpg" role="img" aria-label="Facetas em resina"><span>Foto</span></div><div class="body"><h3>Facetas em resina</h3><p>Uma opção utilizada em determinados casos para modificar aspectos da forma e da aparência dos dentes.</p><a class="more" href="#" data-wa data-tema="facetas em resina" data-posicao="tratamento-facetas">Agendar minha avaliação pelo WhatsApp <svg class="ico"><use href="#i-arrow"/></svg></a></div></article>
-      <article class="card reveal"><div class="ph r45" data-img="img/card-clareamento.jpg" role="img" aria-label="Clareamento dental"><span>Foto</span></div><div class="body"><h3>Clareamento dental</h3><p>Mais luminosidade ao sorriso, de forma planejada.</p><a class="more" href="#" data-wa data-tema="clareamento dental" data-posicao="tratamento-clareamento">Agendar minha avaliação pelo WhatsApp <svg class="ico"><use href="#i-arrow"/></svg></a></div></article>
+    <div class="grid g3 treatment-grid">
+      <article class="card reveal"><div class="ph r34 treatment-aligners" data-img="img/tratamento-ortodontia.webp" role="img" aria-label="Sorriso com aparelho ortodôntico e alinhador transparente"><span>Foto</span></div><div class="body"><h3>Aparelho ortodôntico invisível</h3><p>Os alinhadores transparentes são placas removíveis e discretas que movimentam os dentes gradualmente. São indicados para corrigir desalinhamentos e determinados problemas de mordida, com conforto e praticidade no dia a dia.</p><a class="more" href="#" data-wa data-tema="alinhadores transparentes" data-posicao="tratamento-alinhadores">Agendar minha avaliação pelo WhatsApp <svg class="ico"><use href="#i-arrow"/></svg></a></div></article>
+      <article class="card reveal"><div class="ph r169 treatment-comparison" data-img="img/tratamento-lentes.webp" role="img" aria-label="Comparação do sorriso antes e depois de lentes de contato dental"><span>Foto</span></div><div class="body"><h3>Lentes de contato dental</h3><p>As lentes de contato dental são lâminas ultrafinas de porcelana aplicadas sobre os dentes para harmonizar o sorriso. São indicadas para corrigir alterações de formato, tamanho e cor, além de fechar pequenos espaços entre os dentes, proporcionando um resultado natural e personalizado.</p><a class="more" href="#" data-wa data-tema="lentes de contato dental" data-posicao="tratamento-lentes">Agendar minha avaliação pelo WhatsApp <svg class="ico"><use href="#i-arrow"/></svg></a></div></article>
+      <article class="card reveal"><div class="ph r34 treatment-comparison-portrait" data-img="img/tratamento-facetas.webp" role="img" aria-label="Comparação do sorriso antes e depois de facetas em resina"><span>Foto</span></div><div class="body"><h3>Facetas em resina</h3><p>As facetas em resina são finas camadas aplicadas sobre os dentes para melhorar a estética do sorriso. São indicadas para corrigir pequenas imperfeições, ajustar formato e tamanho, uniformizar a cor e fechar pequenos espaços entre os dentes, sempre após avaliação odontológica.</p><a class="more" href="#" data-wa data-tema="facetas em resina" data-posicao="tratamento-facetas">Agendar minha avaliação pelo WhatsApp <svg class="ico"><use href="#i-arrow"/></svg></a></div></article>
     </div>
     <p class="note">As imagens são ilustrativas. Veja também a lista compacta de outros serviços mais abaixo.</p>
     <div class="btns"><a class="btn" href="#" data-wa data-tema="" data-posicao="cta">Agendar minha avaliação pelo WhatsApp</a></div>

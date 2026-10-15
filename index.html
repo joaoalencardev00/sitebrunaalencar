@@ -3,24 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Dra. Bruna Alencar | Ortodontia e Estética em Salvador — Instituto Sauté</title>
-<meta name="description" content="Ortodontia e odontologia estética no Instituto Sauté, em Salvador (BA): facetas em resina, lentes de contato dental, restaurações estéticas e mais. Agende sua avaliação pelo WhatsApp.">
+<title>Dra. Bruna Alencar | Estética do sorriso e alinhadores em Salvador</title>
+<meta name="description" content="Facetas em resina, alinhadores e clareamento dental com a Dra. Bruna Alencar no Instituto Sauté, em Salvador. Conheça as opções e converse pelo WhatsApp.">
 <meta name="theme-color" content="#702F3D">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Dra. Bruna Alencar | Odontologia estética em Salvador">
-<meta property="og:description" content="Planejamento e cuidado personalizado para o seu sorriso. Agende sua avaliação pelo WhatsApp.">
+<meta property="og:title" content="Dra. Bruna Alencar | Estética do sorriso em Salvador">
+<meta property="og:description" content="Conheça as opções de estética do sorriso e alinhadores no Instituto Sauté, em Salvador.">
 <meta property="og:locale" content="pt_BR">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Dentist","name":"Dra. Bruna Alencar","description":"Odontologia estética: facetas em resina, lentes de contato dental e restaurações estéticas.","areaServed":"Salvador, Bahia","telephone":"+55 71 99625-4878","openingHours":["Mo-Fr 08:00-18:00","Sa 08:00-12:00"],"sameAs":["https://instagram.com/drabruna.alencar","https://instagram.com/institutosaute_"],"address":{"@type":"PostalAddress","streetAddress":"Hangar Business Park, Torre 7, Sala 110, Av. Luís Viana Filho, 13223, São Cristóvão","postalCode":"41500-300","addressLocality":"Salvador","addressRegion":"BA","addressCountry":"BR"}}
+{"@context":"https://schema.org","@type":"Dentist","name":"Dra. Bruna Alencar","description":"Estética do sorriso, facetas em resina, alinhadores e clareamento dental em Salvador.","areaServed":"Salvador, Bahia","telephone":"+55 71 99625-4878","openingHours":["Mo-Fr 08:00-18:00","Sa 08:00-12:00"],"sameAs":["https://instagram.com/drabruna.alencar","https://instagram.com/institutosaute_"],"address":{"@type":"PostalAddress","streetAddress":"Hangar Business Park, Torre 7, Sala 110, Av. Luís Viana Filho, 13223, São Cristóvão","postalCode":"41500-300","addressLocality":"Salvador","addressRegion":"BA","addressCountry":"BR"}}
 </script>
 <style>
 /* ===== 1. TOKENS (edite cores e fontes aqui) ===== */
 :root{
   --bg:#F8F3F0; --surface:#FFFFFF; --ink:#343034; --mut:#645D64;
-  --brand:#702F3D; --head:#702F3D; --gold:#B89555; --line:rgba(112,47,61,.14);
+  --brand:#702F3D; --head:#702F3D; --gold:#8A6A2F; --line:rgba(112,47,61,.14);
   --serif:'Playfair Display',Georgia,serif; --sans:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
   --r:14px; --shadow:0 8px 28px rgba(52,48,52,.07);
   box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
@@ -71,7 +71,8 @@ header.scrolled{border-color:var(--line);box-shadow:var(--shadow)}
 
 /* ===== 5. HERO ===== */
 .hero{padding-top:clamp(36px,6vw,76px)}
-.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,6vw,72px);align-items:center}
+.hero .wrap{display:flex;flex-direction:column;gap:clamp(24px,4vw,40px);align-items:center} .hero .wrap > .reveal{width:100%} .hero .frame{width:min(420px,100%);margin-inline:auto}
+.hero .reveal{opacity:1;transform:none}
 .micro{font-size:.9rem;color:var(--mut);margin-top:14px}
 .chips{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:30px;padding:0;list-style:none;font-size:.9rem;font-weight:600;color:var(--mut)}
 .chips li{display:flex;align-items:center;gap:8px}.chips .ico{color:var(--gold);width:18px;height:18px}
@@ -79,6 +80,10 @@ header.scrolled{border-color:var(--line);box-shadow:var(--shadow)}
 /* Slots de imagem: preenchidos por JS quando o arquivo existe; senão, mostra o placeholder */
 .ph{position:relative;overflow:hidden;border-radius:var(--r);background:linear-gradient(150deg,#ead9d6,#f4e8e2 55%,#e6d3b6);background-size:cover;background-position:center;display:grid;place-items:center;color:var(--brand);box-shadow:var(--shadow)}
 .ph span{font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;opacity:.55;padding:12px;text-align:center}
+.ph>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-photo{object-position:center 28%}
+.hero-frame{width:min(420px,100%);margin-inline:auto}
+.hero-frame .ph{border-radius:200px 200px var(--r) var(--r)}
 .ph.has-img span{display:none}
 .r45{aspect-ratio:4/5}.r34{aspect-ratio:3/4}.r11{aspect-ratio:1/1}.r169{aspect-ratio:16/10}
 .hero .ph{border-radius:200px 200px var(--r) var(--r)}
@@ -212,7 +217,7 @@ footer p{margin:0 0 6px;max-width:52ch}
 }
 @media (max-width:760px){
   /* No mobile, preserve a paleta clara com marsala mesmo quando o aparelho usa tema escuro. */
-  :root:not([data-theme="light"]),:root[data-theme="dark"]{color-scheme:light;--bg:#F8F3F0;--surface:#FFFFFF;--ink:#343034;--mut:#645D64;--brand:#702F3D;--head:#702F3D;--line:rgba(112,47,61,.14);--shadow:0 8px 28px rgba(52,48,52,.07)}
+  :root:not([data-theme="light"]),:root[data-theme="dark"]{color-scheme:light;--bg:#F8F3F0;--surface:#FFFFFF;--ink:#343034;--mut:#645D64;--brand:#702F3D;--head:#702F3D;--gold:#8A6A2F;--line:rgba(112,47,61,.14);--shadow:0 8px 28px rgba(52,48,52,.07)}
   html{scroll-padding-top:calc(68px + env(safe-area-inset-top,0px))}
   body{font-size:16px;line-height:1.6}
   .wrap{width:min(100% - 32px,560px)}
@@ -230,6 +235,8 @@ footer p{margin:0 0 6px;max-width:52ch}
   .lead{font-size:1rem}
   .chips{gap:10px 16px;margin-top:22px}
   .g3,.g2,.g4{grid-template-columns:1fr;gap:18px}
+  .tiles.g4{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .tiles .ph{aspect-ratio:1/1}
   .card .body{padding:20px}
   .feat,.svc{padding:20px}
   .btns{gap:10px;margin-top:22px}
@@ -286,7 +293,7 @@ footer p{margin:0 0 6px;max-width:52ch}
     <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><svg class="ico"><use href="#i-menu"/></svg></button>
     <nav class="nav" id="nav" aria-label="Principal">
       <a href="#sobre">Sobre</a><a href="#tratamentos">Tratamentos</a><a href="#atendimento">Como funciona</a><a href="#faq">Dúvidas</a><a href="#localizacao">Localização</a>
-      <a class="btn" href="#" data-wa data-tema="">Agendar avaliação</a>
+      <a class="btn" href="#" data-wa data-tema="" data-posicao="cta">Agendar avaliação</a>
     </nav>
   </div>
 </header>
@@ -295,36 +302,21 @@ footer p{margin:0 0 6px;max-width:52ch}
 <!-- ===== 01. HERO ===== -->
 <section class="hero" id="inicio">
   <div class="wrap">
+    <div class="frame hero-frame"><div class="ph r45 has-img"><img class="hero-photo" src="img/hero-dra-bruna.jpg" alt="Dra. Bruna Alencar no consultório" fetchpriority="high" decoding="async"></div></div>
     <div class="reveal">
       <span class="eyebrow">Instituto Sauté · Salvador, Bahia</span>
-      <h1>Realce a beleza do seu sorriso com naturalidade e planejamento.</h1>
-      <p class="lead">Alinhadores invisíveis, facetas em resina e clareamento dental, entre outros tratamentos, com uma abordagem individualizada, pensada para valorizar o seu sorriso. Atendimento no Instituto Sauté, em Salvador (BA).</p>
+      <h1>Estética do sorriso e alinhadores em Salvador, com planejamento cuidadoso.</h1>
+      <p class="lead">Conheça opções como facetas em resina, alinhadores e clareamento dental. Na avaliação, converse com a Dra. Bruna sobre seus objetivos e as possibilidades para o seu sorriso.</p>
       <div class="btns">
-        <a class="btn" href="#" data-wa data-tema=""><svg class="ico" style="fill:currentColor;stroke:none"><use href="#i-wa"/></svg>Agendar minha avaliação pelo WhatsApp</a>
+        <a class="btn" href="#" data-wa data-tema="" data-posicao="cta"><svg class="ico" style="fill:currentColor;stroke:none"><use href="#i-wa"/></svg>Agendar minha avaliação pelo WhatsApp</a>
         <a class="btn ghost" href="#tratamentos">Conhecer os tratamentos</a>
       </div>
-      <p class="micro">Fale com a equipe para tirar dúvidas e consultar disponibilidade.</p>
+      <p class="micro">A equipe informa horários disponíveis pelo WhatsApp. Atendimento: seg–sex, 8h–18h · sáb, 8h–12h.</p>
       <ul class="chips">
-        <li><svg class="ico"><use href="#i-clip"/></svg>Avaliação individualizada</li>
-        <li><svg class="ico"><use href="#i-scan"/></svg>Planejamento do sorriso</li>
-        <li><svg class="ico"><use href="#i-heart"/></svg>Atendimento acolhedor</li>
+        <li><svg class="ico"><use href="#i-clip"/></svg>CRO-BA 21849</li>
+        <li><svg class="ico"><use href="#i-scan"/></svg>Scanner 3D para apoiar o planejamento, quando indicado</li>
       </ul>
     </div>
-    <div class="frame reveal"><div class="ph r45" data-img="img/hero-dra-bruna.jpg" role="img" aria-label="Retrato da Dra. Bruna Alencar"><span>Foto: Dra. Bruna<br>(IMG_9806 · 4:5)</span></div></div>
-  </div>
-</section>
-
-<!-- ===== CONDIÇÕES ESPECIAIS (oculta; ative em CONFIG.promo.ativa) ===== -->
-<section class="promo" id="condicoes" hidden>
-  <div class="wrap reveal">
-    <span class="eyebrow">Condições especiais</span>
-    <h2 data-promo-validade></h2>
-    <div class="grid g3">
-      <div class="card feat"><svg class="ico"><use href="#i-cal"/></svg><h3>Avaliação gratuita</h3><p>Dê o primeiro passo para cuidar do seu sorriso com uma avaliação gratuita.</p></div>
-      <div class="card feat"><svg class="ico"><use href="#i-heart"/></svg><h3>Sessão de clareamento</h3><p>Adquira seu tratamento de clareamento e receba uma limpeza dental gratuita.</p></div>
-      <div class="card feat"><svg class="ico"><use href="#i-scan"/></svg><h3>Avaliação ortodôntica</h3><p>A avaliação inclui, sem custo adicional, o uso do Scanner 3D no planejamento do tratamento.</p></div>
-    </div>
-    <a class="btn" href="#" data-wa data-tema="as condições especiais do mês">Falar pelo WhatsApp e garantir minha condição</a>
   </div>
 </section>
 
@@ -334,14 +326,13 @@ footer p{margin:0 0 6px;max-width:52ch}
     <div class="ph r34 reveal" data-img="img/sobre-dra-bruna.jpg" role="img" aria-label="Dra. Bruna Alencar no consultório"><span>Foto: Sobre<br>(2cdce33d · 3:4)</span></div>
     <div class="reveal">
       <span class="eyebrow">Sobre a Dra. Bruna</span>
-      <h2>Odontologia estética com atenção aos detalhes e às características de cada sorriso.</h2>
+      <h2>Quem vai cuidar do seu sorriso</h2>
       <span class="cred" data-cro-wrap hidden>CRO-BA <b data-cro></b></span>
-      <p>A Dra. Bruna Alencar é cirurgiã-dentista dedicada à odontologia estética, com atendimento personalizado e planejamento individualizado para cada sorriso que passa por suas mãos.</p>
-      <p>Seu trabalho une precisão técnica, tecnologia e naturalidade, sempre respeitando as características únicas de cada paciente. Para ela, cada atendimento é sobre propósito: ouvir, entender e acompanhar de perto a jornada de quem confia a ela o próprio sorriso.</p>
-      <p>Atende no <strong>Instituto Sauté</strong>, em Salvador (BA), onde saúde e estética se encontram em um único espaço, pensado para o cuidado completo do paciente.</p>
-      <h3 style="font-size:1rem;letter-spacing:.12em;text-transform:uppercase;font-family:var(--sans);margin:26px 0 6px">Especializações</h3>
-      <ul class="specs"><li>Ortodontia e Estética Dental</li><li>Planejamento Digital do Sorriso</li><li>Facetas em Resina e Reabilitação Estética</li></ul>
-      <div class="btns"><a class="btn" href="#" data-wa data-tema="">Conversar com a equipe pelo WhatsApp</a></div>
+      <p>A Dra. Bruna Alencar é cirurgiã-dentista (CRO-BA 21849) e atende no Instituto Sauté, em Salvador.</p>
+      <p>O atendimento começa por ouvir o que você gostaria de mudar e conversar sobre as opções, etapas e cuidados antes de qualquer decisão.</p>
+      <h3 style="font-size:1rem;letter-spacing:.12em;text-transform:uppercase;font-family:var(--sans);margin:26px 0 6px">Áreas de atuação</h3>
+      <ul class="specs"><li>Ortodontia</li><li>Odontologia estética</li><li>Facetas em resina</li><li>Alinhadores</li></ul>
+      <div class="btns"><a class="btn" href="#" data-wa data-tema="" data-posicao="cta">Agendar minha avaliação pelo WhatsApp</a></div>
     </div>
   </div>
 </section>
@@ -355,12 +346,12 @@ footer p{margin:0 0 6px;max-width:52ch}
       <p class="lead">Cada tratamento tem indicações próprias. Conheça as possibilidades e converse com a equipe para entender qual faz sentido no seu caso.</p>
     </div>
     <div class="grid g3">
-      <article class="card reveal"><div class="ph r45" data-img="img/card-alinhadores.jpg" role="img" aria-label="Alinhadores invisíveis"><span>Foto</span></div><div class="body"><h3>Alinhadores invisíveis</h3><p>Alinhamento discreto, com planejamento digital a cada etapa. A indicação depende de avaliação individual.</p><a class="more" href="#" data-wa data-tema="alinhadores invisíveis">Conversar sobre alinhadores <svg class="ico"><use href="#i-arrow"/></svg></a></div></article>
-      <article class="card reveal"><div class="ph r45" data-img="img/card-facetas.jpg" role="img" aria-label="Facetas em resina"><span>Foto</span></div><div class="body"><h3>Facetas em resina</h3><p>Uma opção utilizada em determinados casos para modificar aspectos da forma e da aparência dos dentes. A indicação depende de avaliação clínica e das características de cada sorriso.</p><a class="more" href="#" data-wa data-tema="facetas em resina">Tirar dúvidas sobre facetas <svg class="ico"><use href="#i-arrow"/></svg></a></div></article>
-      <article class="card reveal"><div class="ph r45" data-img="img/card-clareamento.jpg" role="img" aria-label="Clareamento dental"><span>Foto</span></div><div class="body"><h3>Clareamento dental</h3><p>Mais luminosidade ao sorriso, de forma planejada. A indicação depende de avaliação clínica e das características de cada sorriso.</p><a class="more" href="#" data-wa data-tema="clareamento dental">Saber mais sobre clareamento <svg class="ico"><use href="#i-arrow"/></svg></a></div></article>
+      <article class="card reveal"><div class="ph r45" data-img="img/card-alinhadores.jpg" role="img" aria-label="Alinhadores invisíveis"><span>Foto</span></div><div class="body"><h3>Alinhadores invisíveis</h3><p>Alinhamento discreto, com planejamento digital a cada etapa.</p><a class="more" href="#" data-wa data-tema="alinhadores invisíveis" data-posicao="tratamento-alinhadores">Agendar minha avaliação pelo WhatsApp <svg class="ico"><use href="#i-arrow"/></svg></a></div></article>
+      <article class="card reveal"><div class="ph r45" data-img="img/card-facetas.jpg" role="img" aria-label="Facetas em resina"><span>Foto</span></div><div class="body"><h3>Facetas em resina</h3><p>Uma opção utilizada em determinados casos para modificar aspectos da forma e da aparência dos dentes.</p><a class="more" href="#" data-wa data-tema="facetas em resina" data-posicao="tratamento-facetas">Agendar minha avaliação pelo WhatsApp <svg class="ico"><use href="#i-arrow"/></svg></a></div></article>
+      <article class="card reveal"><div class="ph r45" data-img="img/card-clareamento.jpg" role="img" aria-label="Clareamento dental"><span>Foto</span></div><div class="body"><h3>Clareamento dental</h3><p>Mais luminosidade ao sorriso, de forma planejada.</p><a class="more" href="#" data-wa data-tema="clareamento dental" data-posicao="tratamento-clareamento">Agendar minha avaliação pelo WhatsApp <svg class="ico"><use href="#i-arrow"/></svg></a></div></article>
     </div>
-    <p class="note">As imagens são ilustrativas. Nenhum tratamento é indicado para todas as pessoas, e os resultados variam conforme cada caso. Lentes de contato dental e restaurações estéticas também fazem parte dos serviços — veja a lista completa mais abaixo.</p>
-    <div class="btns"><a class="btn" href="#" data-wa data-tema="">Quero saber qual tratamento é indicado para mim</a></div>
+    <p class="note">As imagens são ilustrativas. Veja também a lista compacta de outros serviços mais abaixo.</p>
+    <div class="btns"><a class="btn" href="#" data-wa data-tema="" data-posicao="cta">Agendar minha avaliação pelo WhatsApp</a></div>
   </div>
 </section>
 
@@ -373,10 +364,10 @@ footer p{margin:0 0 6px;max-width:52ch}
       <p class="lead">A escolha de um tratamento estético deve considerar mais do que a aparência: saúde bucal, características dos dentes, seus objetivos e as possibilidades clínicas.</p>
     </div>
     <div class="grid g4">
-      <div class="card reveal"><div class="ph r11" data-img="img/dif-avaliacao.jpg" role="img" aria-label="Entenda suas opções antes de decidir"><span>Foto</span></div><div class="body"><h3>Entenda suas opções antes de decidir</h3><p>Cada plano é definido considerando suas necessidades clínicas e suas expectativas.</p></div></div>
-      <div class="card reveal"><div class="ph r11" data-img="img/dif-escuta.jpg" role="img" aria-label="Orientação transparente"><span>Foto</span></div><div class="body"><h3>Orientação transparente</h3><p>Orientação sobre etapas, cuidados e próximos passos, para você decidir com segurança.</p></div></div>
-      <div class="card reveal"><div class="ph r11" data-img="img/dif-planejamento.jpg" role="img" aria-label="Planejamento responsável"><span>Foto</span></div><div class="body"><h3>Planejamento responsável</h3><p>Recurso que pode auxiliar a comunicação e o planejamento, quando indicado para o seu caso.</p></div></div>
-      <div class="card reveal"><div class="ph r11" data-img="img/dif-estetica.jpg" role="img" aria-label="Atendimento próximo"><span>Foto</span></div><div class="body"><h3>Atendimento próximo</h3><p>Escuta, acompanhamento de perto e cuidado com cada detalhe do seu sorriso.</p></div></div>
+      <div class="card reveal"><span class="svc-ic"><svg class="ico"><use href="#i-heart"/></svg></span><div class="body"><h3>Entenda suas opções antes de decidir</h3><p>Cada plano é definido considerando suas necessidades clínicas e suas expectativas.</p></div></div>
+      <div class="card reveal"><span class="svc-ic"><svg class="ico"><use href="#i-heart"/></svg></span><div class="body"><h3>Orientação transparente</h3><p>Orientação sobre etapas, cuidados e próximos passos, para você decidir com segurança.</p></div></div>
+      <div class="card reveal"><span class="svc-ic"><svg class="ico"><use href="#i-heart"/></svg></span><div class="body"><h3>Planejamento responsável</h3><p>Recurso que pode auxiliar a comunicação e o planejamento, quando indicado para o seu caso.</p></div></div>
+      <div class="card reveal"><span class="svc-ic"><svg class="ico"><use href="#i-heart"/></svg></span><div class="body"><h3>Atendimento próximo</h3><p>Escuta, acompanhamento de perto e cuidado com cada detalhe do seu sorriso.</p></div></div>
     </div>
   </div>
 </section>
@@ -412,8 +403,8 @@ footer p{margin:0 0 6px;max-width:52ch}
       <li class="reveal"><h3>Faça sua avaliação</h3><p>Na consulta, a profissional avalia suas necessidades e explica as opções pertinentes ao seu caso.</p></li>
       <li class="reveal"><h3>Conheça as possibilidades</h3><p>Após a avaliação, converse sobre etapas, cuidados e o planejamento recomendado.</p></li>
     </ol>
-    <p class="note">A consulta só é considerada agendada após a confirmação de data e horário pela equipe.</p>
-    <div class="btns"><a class="btn" href="#" data-wa data-tema="">Iniciar meu atendimento</a></div>
+    
+    <div class="btns"><a class="btn" href="#" data-wa data-tema="" data-posicao="cta">Agendar minha avaliação pelo WhatsApp</a></div>
   </div>
 </section>
 
@@ -425,25 +416,8 @@ footer p{margin:0 0 6px;max-width:52ch}
       <h2>Cuidado odontológico completo para diferentes necessidades.</h2>
       <p class="lead">Confirme com a equipe a disponibilidade e a indicação de cada serviço.</p>
     </div>
-    <div class="grid g2 svc-grid">
-      <article class="svc reveal"><div class="svc-h"><span class="svc-ic"><svg class="ico"><use href="#i-heart"/></svg></span><h3>Estética e prevenção</h3></div><ul><li><b>Lentes de contato dental</b><span>Soluções estéticas que podem ser consideradas em situações específicas, após análise do caso.</span></li><li><b>Restauração estética</b><span>Recupera forma, função e estética do dente de maneira natural.</span></li><li><b>Limpeza dental</b><span>Prevenção e manutenção da saúde bucal, de forma individualizada.</span></li></ul></article>
-      <article class="svc reveal"><div class="svc-h"><span class="svc-ic"><svg class="ico"><use href="#i-scan"/></svg></span><h3>Alinhamento e desenvolvimento</h3></div><ul><li><b>Ortodontia (alinhadores invisíveis)</b><span>Alinhamento discreto, com planejamento digital a cada etapa.</span></li><li><b>Ortopedia infantil</b><span>Acompanhamento do desenvolvimento ósseo e dental na infância.</span></li></ul></article>
-      <article class="svc reveal"><div class="svc-h"><span class="svc-ic"><svg class="ico"><use href="#i-tooth"/></svg></span><h3>Reabilitação oral</h3></div><ul><li><b>Implantes e próteses</b><span>Reabilitação de dentes ausentes com soluções naturais.</span></li><li><b>Cirurgia oral</b><span>Procedimentos cirúrgicos bucais realizados com técnica e segurança.</span></li></ul></article>
-      <article class="svc reveal"><div class="svc-h"><span class="svc-ic"><svg class="ico"><use href="#i-clip"/></svg></span><h3>Especialidades clínicas</h3></div><ul><li><b>Periodontia</b><span>Tratamento e prevenção de doenças da gengiva.</span></li><li><b>Endodontia</b><span>Tratamento de canal, preservando o dente natural.</span></li><li><b>Bucomaxilofacial</b><span>Diagnóstico e tratamento de boca, face e mandíbula.</span></li></ul></article>
-    </div>
-    <div class="btns"><a class="btn ghost" href="#" data-wa data-tema="outro tratamento odontológico">Consultar sobre outro tratamento</a></div>
-  </div>
-</section>
-
-<!-- ===== DEPOIMENTOS (relatos reais; confirmar autorização e normas do CFO) ===== -->
-<section class="depo" id="depoimentos">
-  <div class="wrap">
-    <div class="head reveal"><span class="eyebrow">Depoimentos</span><h2>A experiência de cada paciente é única.</h2></div>
-    <div class="grid g3">
-      <blockquote class="quote reveal">“Perfeitaaa!!!!! Melhor dentista que eu já passei!!”<cite>Paciente</cite></blockquote>
-      <blockquote class="quote reveal">“Sempre tive muito pavor de dentista. Você mudou esse quadro com seu carinho, amor e sua atenção às minhas necessidades.”<cite>Paciente</cite></blockquote>
-      <blockquote class="quote reveal">“Primeira vez que senti resultado efetivo, sem dor nem sensibilidade.”<cite>Paciente</cite></blockquote>
-    </div>
+    <p class="lead svc-summary">No Instituto Sauté também são oferecidos lentes de contato dental, restaurações estéticas, limpeza dental, ortopedia infantil, implantes e próteses, cirurgia oral, periodontia, endodontia e bucomaxilofacial. Consulte a equipe para saber sobre cada serviço e o profissional responsável.</p>
+    <div class="btns"><a class="btn ghost" href="#" data-wa data-tema="outro tratamento odontológico" data-posicao="outros-tratamentos">Agendar minha avaliação pelo WhatsApp</a></div>
   </div>
 </section>
 
@@ -452,13 +426,16 @@ footer p{margin:0 0 6px;max-width:52ch}
   <div class="wrap">
     <div class="head reveal" style="margin-inline:auto;text-align:center"><span class="eyebrow">Perguntas frequentes</span><h2>Dúvidas comuns antes de começar.</h2></div>
     <div class="faq reveal">
-      <details><summary>Como saber se facetas em resina são indicadas para mim?</summary><p>A indicação depende de avaliação odontológica. A profissional precisa considerar a saúde bucal, a estrutura dos dentes e o resultado que você busca.</p></details>
-      <details><summary>Qual é a diferença entre facetas em resina e lentes de contato dental?</summary><p>São opções diferentes, com características e indicações próprias. A escolha deve ser discutida após avaliação do seu caso.</p></details>
-      <details><summary>O planejamento digital do sorriso pode ser feito em qualquer caso?</summary><p>A possibilidade e a utilidade do recurso dependem do caso clínico e dos recursos disponíveis. Converse com a equipe para entender como funciona.</p></details>
-      <details><summary>Quanto custa o tratamento?</summary><p>O valor pode variar conforme o procedimento e as necessidades identificadas. Entre em contato para receber orientações sobre avaliação e orçamento.</p></details>
-      <details><summary>Quanto tempo leva o tratamento?</summary><p>O prazo depende do procedimento e do planejamento individual. A profissional poderá orientar após avaliar o caso.</p></details>
-      <details><summary>Como faço para agendar?</summary><p>Clique em um dos botões de WhatsApp e fale com a equipe para consultar disponibilidade e combinar os próximos passos.</p></details>
-      <div class="btns" style="justify-content:center"><a class="btn ghost" href="#" data-wa data-tema="">Ainda tenho dúvidas — falar pelo WhatsApp</a></div>
+      <details><summary>Tenho medo de dentista. Como posso me preparar?</summary><p>Conte à equipe sobre seu receio na primeira mensagem. Na consulta, converse com a profissional sobre suas dúvidas e peça que explique cada etapa antes de começar.</p></details>
+      <details><summary>Como é a primeira consulta?</summary><p>A consulta começa com uma conversa sobre seus objetivos e uma avaliação clínica. A profissional explica as opções pertinentes e os próximos passos para o seu caso.</p></details>
+      <details><summary>O Scanner 3D é usado em todos os casos?</summary><p>O escaneamento pode apoiar a avaliação e o planejamento quando for indicado. A equipe pode confirmar a disponibilidade e explicar como funciona.</p></details>
+      <details><summary>Quanto custa o tratamento?</summary><p>O valor depende do tratamento e das necessidades identificadas. Após a avaliação, você pode conversar sobre o plano proposto e os valores antes de decidir.</p></details>
+      <details><summary>Quanto tempo leva o tratamento?</summary><p>O prazo varia conforme o procedimento e o planejamento clínico. A profissional poderá explicar a estimativa para o seu caso após avaliá-lo.</p></details>
+      <details><summary>Facetas em resina desgastam os dentes? Quanto duram?</summary><p>Desgaste, indicação, durabilidade e manutenção dependem da técnica e das características de cada caso. Peça à profissional que explique esses pontos na avaliação antes de decidir.</p></details>
+      <details><summary>O resultado pode ficar artificial?</summary><p>Converse sobre o resultado que você deseja e peça para entender as possibilidades e limitações para o seu sorriso. A profissional poderá orientar após a avaliação.</p></details>
+      <details><summary>Como chego ao Instituto Sauté? Há estacionamento?</summary><p>O Instituto fica no Hangar Business Park, Torre 7, Sala 110, em São Cristóvão. Consulte a administração do local ou a equipe sobre estacionamento e acesso no dia da consulta.</p></details>
+      <details><summary>Como faço para agendar?</summary><p>Envie uma mensagem pelo WhatsApp. A equipe informa os horários disponíveis; a consulta fica agendada após a confirmação de data e horário.</p></details>
+      <div class="btns" style="justify-content:center"><a class="btn ghost" href="#" data-wa data-tema="" data-posicao="cta">Agendar minha avaliação pelo WhatsApp</a></div>
     </div>
   </div>
 </section>
@@ -479,9 +456,9 @@ footer p{margin:0 0 6px;max-width:52ch}
     <div class="loc-info reveal">
       <div class="loc-card addr"><svg class="ico"><use href="#i-pin"/></svg><div><strong>Endereço</strong><span data-endereco></span></div><div class="ph sign" data-img="img/placa.jpg" role="img" aria-label="Placa do Instituto Sauté"><span>Foto</span></div></div>
       <div class="loc-card"><svg class="ico"><use href="#i-clock"/></svg><div><strong>Horários</strong><span data-horario></span></div></div>
-      <div class="loc-card"><svg class="ico"><use href="#i-chat"/></svg><div><strong>Contato</strong><span>WhatsApp (71) 99625-4878. Consulte a disponibilidade com a equipe.</span></div></div>
+      <div class="loc-card"><svg class="ico"><use href="#i-chat"/></svg><div><strong>Contato</strong><span>WhatsApp <a href="tel:+5571996254878">(71) 99625-4878</a>. Atendimento: seg–sex, 8h–18h · sáb, 8h–12h.</span></div></div>
     </div>
-    <div class="btns"><a class="btn" href="#" data-wa data-tema="">Falar com a equipe</a><a class="btn ghost" href="#" data-mapa target="_blank" rel="noopener">Ver no mapa</a></div>
+    <div class="btns"><a class="btn" href="#" data-wa data-tema="" data-posicao="cta">Agendar minha avaliação pelo WhatsApp</a><a class="btn ghost" href="#" data-mapa target="_blank" rel="noopener">Ver no mapa</a></div>
   </div>
 </section>
 
@@ -490,28 +467,37 @@ footer p{margin:0 0 6px;max-width:52ch}
   <div class="wrap reveal">
     <div><h2>Vamos conversar sobre o seu sorriso?</h2>
     <p>Conte à equipe o que você gostaria de melhorar no seu sorriso. Você poderá tirar dúvidas iniciais e entender como agendar uma avaliação com a Dra. Bruna Alencar, em Salvador.</p>
-    <div class="btns"><a class="btn light" href="#" data-wa data-tema=""><svg class="ico" style="fill:currentColor;stroke:none"><use href="#i-wa"/></svg>Agendar avaliação pelo WhatsApp</a></div>
-    <small>A indicação do tratamento é definida após avaliação odontológica.</small></div>
+    <div class="btns"><a class="btn light" href="#" data-wa data-tema="" data-posicao="cta"><svg class="ico" style="fill:currentColor;stroke:none"><use href="#i-wa"/></svg>Agendar avaliação pelo WhatsApp</a></div>
+    <small>O tratamento indicado é definido após avaliação clínica; os resultados variam de pessoa para pessoa. Atendimento: seg–sex, 8h–18h · sáb, 8h–12h.</small></div>
     <div class="ph r45" data-img="img/cta-sorriso.jpg" role="img" aria-label="Dra. Bruna Alencar sorrindo"><span>Foto</span></div>
   </div>
 </section>
 </main>
 
+<section class="alt" id="privacidade">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Privacidade</span><h2>Como seus dados são tratados</h2>
+      <p>Este site não tem formulário de cadastro. Se você iniciar uma conversa, os dados que enviar serão tratados pelo WhatsApp e pela equipe para responder à sua solicitação e orientar o agendamento. Evite enviar informações de saúde que não sejam necessárias por esse canal.</p>
+      <p>O mapa incorporado e as fontes externas podem ser carregados por serviços de terceiros, sujeitos às políticas desses serviços. Para solicitar informações ou exercer seus direitos sobre dados enviados à equipe, entre em contato pelo <a href="tel:+5571996254878">(71) 99625-4878</a>.</p>
+      <p>Esta página não instala ferramenta de analytics ou pixel de publicidade.</p>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="wrap">
     <div><strong>Dra. Bruna Alencar</strong><p>Ortodontia e estética · Instituto Sauté · Salvador, Bahia<span data-cro-foot></span></p>
-      <p>Este site tem caráter informativo e não substitui a avaliação odontológica. Os resultados variam de acordo com cada caso.</p></div>
-    <div><p><a href="#" data-wa data-tema="">Falar no WhatsApp</a></p><p><a href="https://instagram.com/drabruna.alencar" target="_blank" rel="noopener">@drabruna.alencar</a> · <a href="https://instagram.com/institutosaute_" target="_blank" rel="noopener">@institutosaute_</a></p><p><a href="#privacidade">Política de privacidade</a></p><p>© <span id="ano"></span> Dra. Bruna Alencar</p></div>
+      <p>Este site tem caráter informativo. O tratamento indicado é definido após avaliação clínica; os resultados variam de pessoa para pessoa.</p></div>
+    <div><p><a href="#" data-wa data-tema="" data-posicao="cta">Agendar minha avaliação pelo WhatsApp</a></p><p><a href="https://instagram.com/drabruna.alencar" target="_blank" rel="noopener">@drabruna.alencar</a> · <a href="https://instagram.com/institutosaute_" target="_blank" rel="noopener">@institutosaute_</a></p><p><a href="#privacidade">Política de privacidade</a></p><p>© <span id="ano"></span> Dra. Bruna Alencar</p></div>
   </div>
 </footer>
 
-<a class="wa-fixed" href="#" data-wa data-tema="" aria-label="Falar pelo WhatsApp"><svg class="ico"><use href="#i-wa"/></svg><span>WhatsApp</span></a>
+<a class="wa-fixed" href="#" data-wa data-tema="" data-posicao="cta" aria-label="Falar pelo WhatsApp"><svg class="ico"><use href="#i-wa"/></svg><span>Agendar avaliação</span></a>
 
 <script>
 /* ===== CONFIGURAÇÃO (edite apenas este bloco) ===== */
 const CONFIG = {
   whatsapp: "5571996254878",  // DDI + DDD + número, só dígitos
-  mensagem: "Olá! Encontrei o site da Dra. Bruna Alencar e gostaria de saber mais sobre os tratamentos e agendar uma avaliação.",
   cro: "21849",                // aparece como CRO-BA 21849
   endereco: "Instituto Sauté — Hangar Business Park, Torre 7, Sala 110, Av. Luís Viana Filho, 13223, São Cristóvão, Salvador/BA — CEP 41500-300",
   horario: "Seg a sex, 8h às 18h · Sáb, 8h às 12h",
@@ -519,15 +505,20 @@ const CONFIG = {
   mapaEmbed: true,             // true = mapa real do Google (use em hospedagem própria)
   enderecoMapa: "Hangar Business Park, Av. Luís Viana Filho, 13223, Salvador, BA",
   imagens: true,               // false = mostra apenas os placeholders
-  promo: { ativa: false, titulo: "Condições especiais de [mês]", validade: "Condições válidas durante o mês de [mês]." }  // ative e ajuste o mês
 };
 
 /* ===== WhatsApp: monta o link com mensagem pré-preenchida ===== */
-document.querySelectorAll("[data-wa]").forEach(a => {
-  const tema = a.dataset.tema;
-  const texto = CONFIG.mensagem + (tema ? " Tenho interesse em: " + tema + "." : "");
+document.querySelectorAll("[data-wa]").forEach((a, index) => {
+  const tema = a.dataset.tema || "geral";
+  const texto = "Olá! Vim pelo site da Dra. Bruna Alencar e quero agendar uma avaliação" + (a.dataset.tema ? " sobre " + a.dataset.tema : "") + ". Quais horários vocês têm disponíveis?";
   a.href = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(texto);
   a.target = "_blank"; a.rel = "noopener";
+  a.addEventListener("click", () => {
+    const params = new URLSearchParams(location.search);
+    const utm = Object.fromEntries(["utm_source","utm_medium","utm_campaign","utm_content","utm_term"].map(k => [k, params.get(k) || ""]));
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({event:"whatsapp_click", tema, posicao:a.dataset.posicao || "botao-" + (index + 1), ...utm});
+  });
 });
 
 /* ===== Dados profissionais (só exibidos se confirmados) ===== */
@@ -550,18 +541,16 @@ if (CONFIG.mapaEmbed) {
   box.prepend(f);
 }
 document.getElementById("ano").textContent = new Date().getFullYear();
-if (CONFIG.promo.ativa) {
-  const p = document.getElementById("condicoes");
-  p.querySelector("[data-promo-validade]").textContent = CONFIG.promo.titulo;
-  p.querySelector(".btn").insertAdjacentHTML("afterend", '<p class="micro">' + CONFIG.promo.validade + "</p>");
-  p.hidden = false;
-}
 
 /* ===== Imagens: carrega se o arquivo existir; senão mantém o placeholder ===== */
 if (CONFIG.imagens) document.querySelectorAll("[data-img]").forEach(el => {
-  const img = new Image();
-  img.onload = () => { el.style.backgroundImage = "url('" + el.dataset.img + "')"; el.classList.add("has-img"); };
+  const img = document.createElement("img");
   img.src = el.dataset.img;
+  img.alt = el.getAttribute("aria-label") || "";
+  img.loading = "lazy";
+  img.decoding = "async";
+  el.replaceChildren(img);
+  el.classList.add("has-img");
 });
 
 /* ===== Menu mobile ===== */
